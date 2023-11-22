@@ -11,7 +11,7 @@ import SwiftUI
 struct AfricaWildApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
