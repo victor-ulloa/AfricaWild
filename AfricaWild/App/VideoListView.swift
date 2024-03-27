@@ -11,12 +11,16 @@ struct VideoListView: View {
     
     @State var videos: [Video] = Bundle.main.decode("videos.json")
     
+    let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(videos) { video in
-                    VideoListItemView(video: video)
-                        .padding(.vertical, 8)
+                    NavigationLink(destination: VideoPlayerView(videoSelected: video.id, videoTitle: video.name)){
+                        VideoListItemView(video: video)
+                            .padding(.vertical, 8)
+                    }
                 }
             }
             .listStyle(.insetGrouped)
@@ -26,6 +30,7 @@ struct VideoListView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         videos.shuffle()
+                        hapticImpact.impactOccurred()
                     } label: {
                         Image(systemName: "arrow.2.squarepath")
                     }
