@@ -40,6 +40,12 @@ struct AnimalDetailView: View {
                     HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
                     InsetGalleryView(animal: animal)
                 }
+                
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    InsetFactView(animal: animal)
+                }
+                .padding(.horizontal)
             }
             .navigationTitle(animal.name)
             .navigationBarTitleDisplayMode(.inline)

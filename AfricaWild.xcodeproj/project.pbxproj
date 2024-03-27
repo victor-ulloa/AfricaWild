@@ -37,6 +37,7 @@
 		57B630092B0DAE460006B9A1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B630082B0DAE460006B9A1 /* MapView.swift */; };
 		57B6300B2B0DAE650006B9A1 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6300A2B0DAE650006B9A1 /* GalleryView.swift */; };
 		57B6300D2B0DAE860006B9A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6300C2B0DAE860006B9A1 /* MainView.swift */; };
+		57D8EFAA2BB3A8BA00BC0F2C /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8EFA92BB3A8BA00BC0F2C /* InsetFactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		57B630082B0DAE460006B9A1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		57B6300A2B0DAE650006B9A1 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		57B6300C2B0DAE860006B9A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		57D8EFA92BB3A8BA00BC0F2C /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				57A81AFD2BB115F600B883E2 /* AnimalDetailView.swift */,
 				57A81AFF2BB1183800B883E2 /* HeadingView.swift */,
 				57A81B012BB119CE00B883E2 /* InsetGalleryView.swift */,
+				57D8EFA92BB3A8BA00BC0F2C /* InsetFactView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				57A81AFC2BB1116A00B883E2 /* Animal.swift in Sources */,
 				57B62FD92B051FFF0006B9A1 /* ContentView.swift in Sources */,
 				57A81AFA2BB10DFA00B883E2 /* AnimalListItemView.swift in Sources */,
+				57D8EFAA2BB3A8BA00BC0F2C /* InsetFactView.swift in Sources */,
 				57A81AF82BB109FD00B883E2 /* Bundle+Extension.swift in Sources */,
 				57A81AF52BB1091D00B883E2 /* CoverImage.swift in Sources */,
 				57A81AFE2BB115F600B883E2 /* AnimalDetailView.swift in Sources */,
