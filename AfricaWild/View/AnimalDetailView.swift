@@ -46,6 +46,20 @@ struct AnimalDetailView: View {
                     InsetFactView(animal: animal)
                 }
                 .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    InsetMapView()
+                }
+                .padding(.horizontal)
             }
             .navigationTitle(animal.name)
             .navigationBarTitleDisplayMode(.inline)
